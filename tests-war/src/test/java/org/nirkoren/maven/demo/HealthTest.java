@@ -24,7 +24,7 @@ public class HealthTest {
 	public void testResponseCode() {
 		URL url;
 		try {
-			System.out.println("Pinging: " + appurl);
+			System.out.println("Pinging URL: " + appurl);
 			url = new URL(appurl);
 			HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 			connection.setRequestMethod("GET");

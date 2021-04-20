@@ -8,7 +8,7 @@ In order to make it work, please do the following:
   <li>Configure under <TOMCAT DIR>/conf/tomcat-users.xml the code below</li>
   <li>[LINUX / MAC] Make sure you have running permissions <TOMCAT DIR>/bin/ and run chmod +x *.sh</li>
   <li>Restart tomcat <TOMCAT DIR>/bin/shutdown.sh & startup.sh</li>
-  <li>Application URL is <a href=http://localhost:8080/helloworld/>http://localhost:8080/helloworld/</a></li>  
+  <li>The application URL is <a href=http://localhost:8080/helloworld/>http://localhost:8080/helloworld/</a></li>  
 </ul>
 
  > ```xml
