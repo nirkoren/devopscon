@@ -31,6 +31,7 @@ public class HealthTest {
 			int errCode = connection.getResponseCode();
 			assertEquals(200, errCode);
 		} catch (Exception e) {
+			System.out.println("Connection failed ...");
 			fail();
 		}
 
