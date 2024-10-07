@@ -3,7 +3,7 @@
 In order to make it work, please follow the instructions below: 
 
 <ul>
-  <li>Make sure you have JAVA 17 (<b>JDK</b> and not <b>JRE standalone</b>) is running on your laptop</li>
+  <li>Make sure you have Java JDK 17 (<b>JDK</b> and not <b>JRE standalone</b> ❗️) is running on your laptop</li>
   <li>Get Tomcat 9 (not version 10) - prefer the Core > Zip from <a href=https://tomcat.apache.org/download-90.cgi target=new>here</a></li>
   <li>Configure under <TOMCAT DIR>/conf/tomcat-users.xml the code below</li>
   <li>[LINUX / MAC] Please make sure you have running permissions on the /bin/ directory and run chmod +x *.sh</li>
