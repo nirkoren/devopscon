@@ -1,6 +1,6 @@
 node {
     def mvnHome
-    def GIT_REPO = "https://github.com/nirkoren/devopscon.git"
+    def GIT_REPO = "https://github.com/mikaelcolboc/devopscon.git"
    
 
     stage("Preparation") { 
