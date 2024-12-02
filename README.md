@@ -18,6 +18,7 @@ In order to make it work, please follow the instructions below:
  >   <role rolename="admin-gui" />
  >   <role rolename="manager-script" />
  >   <user username="admin" password="admin" roles="manager-gui,admin-gui,manager-script" />
+ > test
  > </tomcat-users>
  > ```
  
