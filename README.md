@@ -9,7 +9,7 @@ In order to make it work, please follow the instructions below:
   <li>Get Tomcat 9 (not version 10) - prefer the Core > Zip from <a href=https://tomcat.apache.org/download-90.cgi target=new>here</a></li>
   <li>Configure under <TOMCAT DIR>/conf/tomcat-users.xml the code below</li>
   <li>[LINUX / MAC] Please make sure you have running permissions on the /bin/ directory and run chmod +x *.sh</li>
-  <li>Restart tomcat [TOMCAT DIR]/bin/shutdown.sh & startup.sh (for non-Windows OS) or /bin/shutdown.bat & startup.bat</li>
+  <li>Restart Tomcat [TOMCAT DIR]/bin/shutdown.sh & startup.sh (for non-Windows OS) or /bin/shutdown.bat & startup.bat</li>
   <li>The Tomcat URL is <a href=http://localhost:8080/>http://localhost:8080/</a></li>  
   <li>The application URL is <a href=http://localhost:8080/helloworld/>http://localhost:8080/helloworld/</a></li>  
 </ul>
