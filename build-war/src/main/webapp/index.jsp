@@ -9,7 +9,7 @@
 		out.print(prefix + handler.sayHello());
 	%>
 	<script>
-		const colors = ["red", "blue", "green", "orange", "purple", "yellow"];
+		const colors = ["red", "blue", "green", "orange", "purple", "yellow", "pink", "cyan", "lime", "teal", "magenta", "gold"];
 		let idx = 0;
 		setInterval(function() {
 			idx = (idx + 1) % colors.length;
