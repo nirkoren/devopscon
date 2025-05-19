@@ -4,7 +4,7 @@
 	<groupId>org.nirkoren.maven.demo</groupId>
 	<artifactId>helloworld-reactor</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<description>Demo project for CI/CD</description>
+	<description>CI/CD Demo project</description>
 	<packaging>pom</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
