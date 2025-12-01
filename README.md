@@ -3,7 +3,7 @@
 In order to make it work, please follow the instructions below: 
 
 > [!IMPORTANT] 
-> Make sure you have JAVA 21 (<b>JDK</b> and not <b>JRE standalone</b>) running on your laptop
+> Make sure you have JAVA or JDK 21 (<b>JDK</b> and not <b>JRE standalone</b>) running on your laptop
 
 <ul>
   <li>Get Tomcat 9 (not version 10) - prefer the Core > Zip from <a href=https://tomcat.apache.org/download-90.cgi target=new>here</a></li>
