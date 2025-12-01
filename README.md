@@ -1,6 +1,6 @@
 # Welcome to DevOpsCon CI/CD demo repo
 ## This repository contains basic Maven project with Hello-World Java war for CI/CD workshop
-In order to make it work, please follow the instructions below: 
+in order to make it work, please follow the instructions below: 
 
 > [!IMPORTANT] 
 > Make sure you have JAVA 21 (<b>JDK</b> and not <b>JRE standalone</b>) running on your laptop
