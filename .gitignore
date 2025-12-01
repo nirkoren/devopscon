@@ -6,6 +6,7 @@ target
 .DS_Store
 *.class
 *.jar
+test
 
 # Log file
 *.log
