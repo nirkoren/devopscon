@@ -5,7 +5,7 @@ node {
     stage("Preparation") { 
         println "Cloning git repository..."
         git branch: "main", url: GIT_REPO
-        mvnHome = tool 'M3'
+        mvnHome = tool 'Maven local'
     }
 
     stage('Build & Deploy') {
