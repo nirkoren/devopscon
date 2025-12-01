@@ -1,30 +1,29 @@
-# 🌟 Welcome to DevOpsCon CI/CD Demo Repo
+# 🌟 Welcome to DevOpsCon CI/CD demo repo
 
-This repository contains a basic **Maven project** with a **Hello-World Java WAR** file used during the **CI/CD workshop**.
+## This repository contains basic Maven project with Hello-World Java war for CI/CD workshop
 
-Please follow the setup instructions below to get everything running correctly.
+In order to make it work, please follow the instructions below:
 
----
-
-> ⚠️ **IMPORTANT**  
-> Make sure you have **JAVA 21 (JDK — *not* JRE standalone)** installed on your machine.  
-> ——————————————————————————
+> [!IMPORTANT]  
+> Make sure you have JAVA 21 (**JDK** and not **JRE standalone**) running on your laptop  
+> ————————————————————————
 
 ---
 
-## 🚀 Setup Instructions
+### ⚙️ Setup Instructions
 
-### 1️⃣ Download & Prepare Tomcat  
-- Download **Tomcat 9** (not version 10).  
-  Choose: **Core → ZIP**  
-  👉 <a href="https://tomcat.apache.org/download-90.cgi" target="new">Tomcat 9 Download Page</a>
+<ul>
+  <li>Get Tomcat 9 (not version 10) - prefer the Core > Zip from <a href="https://tomcat.apache.org/download-90.cgi" target="new">here</a></li>
+  <li>Configure under &lt;TOMCAT DIR&gt;/conf/tomcat-users.xml the code below</li>
+  <li>[LINUX / MAC] Please make sure you have running permissions on the /bin/ directory and run <code>chmod +x *.sh</code></li>
+  <li>Restart tomcat [TOMCAT DIR]/bin/shutdown.sh &amp; startup.sh (for non-Windows OS) or /bin/shutdown.bat &amp; startup.bat</li>
+  <li>The Tomcat URL is <a href="http://localhost:8080/">http://localhost:8080/</a></li>
+  <li>The application URL is <a href="http://localhost:8080/helloworld/">http://localhost:8080/helloworld/</a></li>
+</ul>
 
 ---
 
-### 2️⃣ Add User Configuration  
-Edit:  
-`<TOMCAT DIR>/conf/tomcat-users.xml`  
-Insert the following:
+### 📝 XML Configuration
 
 ```xml
 <tomcat-users>
