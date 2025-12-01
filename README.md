@@ -23,4 +23,3 @@ In order to make it work, please follow the instructions below:
  >   <user username="admin" password="admin" roles="manager-gui,admin-gui,manager-script" />
  > </tomcat-users>
  > ```
- 
