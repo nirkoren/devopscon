@@ -1,25 +1,35 @@
-# Welcome to DevOpsCon CI/CD demo repo
-## This repository contains basic Maven project with Hello-World Java war for CI/CD workshop
-In order to make it work, please follow the instructions below: 
+# 🌟 Welcome to DevOpsCon CI/CD Demo Repo
 
-> [!IMPORTANT] 
-> Make sure you have JAVA 21 (<b>JDK</b> and not <b>JRE standalone</b>) running on your laptop
+This repository contains a basic **Maven project** with a **Hello-World Java WAR** file used during the **CI/CD workshop**.
 
-<ul>
-  <li>Get Tomcat 9 (not version 10) - prefer the Core > Zip from <a href=https://tomcat.apache.org/download-90.cgi target=new>here</a></li>
-  <li>Configure under <TOMCAT DIR>/conf/tomcat-users.xml the code below</li>
-  <li>[LINUX / MAC] Please make sure you have running permissions on the /bin/ directory and run chmod +x *.sh</li>
-  <li>Restart tomcat [TOMCAT DIR]/bin/shutdown.sh & startup.sh (for non-Windows OS) or /bin/shutdown.bat & startup.bat</li>
-  <li>The Tomcat URL is <a href=http://localhost:8080/>http://localhost:8080/</a></li>  
-  <li>The application URL is <a href=http://localhost:8080/helloworld/>http://localhost:8080/helloworld/</a></li>  
-</ul>
+Please follow the setup instructions below to get everything running correctly.
 
- > ```xml
- > <tomcat-users>
- >   <role rolename="manager-gui" />
- >   <role rolename="admin-gui" />
- >   <role rolename="manager-script" />
- >   <user username="admin" password="admin" roles="manager-gui,admin-gui,manager-script" />
- > </tomcat-users>
- > ```
- 
+---
+
+> ⚠️ **IMPORTANT**  
+> Make sure you have **JAVA 21 (JDK — *not* JRE standalone)** installed on your machine.  
+> ——————————————————————————
+
+---
+
+## 🚀 Setup Instructions
+
+### 1️⃣ Download & Prepare Tomcat  
+- Download **Tomcat 9** (not version 10).  
+  Choose: **Core → ZIP**  
+  👉 <a href="https://tomcat.apache.org/download-90.cgi" target="new">Tomcat 9 Download Page</a>
+
+---
+
+### 2️⃣ Add User Configuration  
+Edit:  
+`<TOMCAT DIR>/conf/tomcat-users.xml`  
+Insert the following:
+
+```xml
+<tomcat-users>
+  <role rolename="manager-gui" />
+  <role rolename="admin-gui" />
+  <role rolename="manager-script" />
+  <user username="admin" password="admin" roles="manager-gui,admin-gui,manager-script" />
+</tomcat-users>
