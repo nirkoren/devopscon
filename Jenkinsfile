@@ -4,7 +4,7 @@ node {
     stage("Preparation") { 
         println "Cloning git repository..."
         mvnHome = tool 'M3'
-	checkout scm
+		checkout scm
     }
 
     stage('Build & Deploy') {
