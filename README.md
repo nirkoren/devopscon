@@ -1,4 +1,4 @@
-# DevOpsCon CI/CD demo repo
+# DevOpsCon CI/CD demo repo 22
 ## This repository contains basic Maven project with Hello-World Java war for CI/CD workshop
 In order to make it work, please follow the instructions below: 
 
