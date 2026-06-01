@@ -1,5 +1,5 @@
 # Welcome to DevOpsCon CI/CD demo repo
-## This repository contains basic Maven project with Hello-World Java war for CI/CD workshop
+## This repository contains basic Maven project with Hello-World Java war for CI/CD workshop AND workshop slides that I covered during the various DevOpsCon(s)
 In order to make it work, please follow the instructions below: 
 
 > [!IMPORTANT] 
