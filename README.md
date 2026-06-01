@@ -2,6 +2,8 @@
 ## This repository contains basic Maven project with Hello-World Java war for CI/CD workshop
 In order to make it work, please follow the instructions below: 
 
+This is a change that is going to break your repository, idk, unit tests are for squares
+
 > [!IMPORTANT] 
 > Make sure you have JAVA 21 (<b>JDK</b> and not <b>JRE standalone</b>) running on your laptop
 
