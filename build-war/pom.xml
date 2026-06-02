@@ -11,11 +11,8 @@
 		<artifactId>helloworld-reactor</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-
-	<properties>
-		<finalWarName>helloworld</finalWarName>
-	</properties>
 	<build>
+		<finalName>helloworld</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -25,29 +22,44 @@
 					<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
 				</configuration>
 			</plugin>
-
 			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
+				<groupId>org.codehaus.cargo</groupId>
+				<artifactId>cargo-maven3-plugin</artifactId>
+				<version>1.10.27</version>
 				<configuration>
-					<url>http://localhost:8080/manager/text</url>
-					<server>TomcatServer</server>
-					<path>/helloworld</path>
-					<username>admin</username>
-					<password>admin</password>
+					<container>
+						<containerId>tomcat9x</containerId>
+						<type>remote</type>
+					</container>
+					<configuration>
+						<type>runtime</type>
+						<properties>
+							<cargo.tomcat.manager.url>http://localhost:8080/manager/text</cargo.tomcat.manager.url>
+							<cargo.remote.username>admin</cargo.remote.username>
+							<cargo.remote.password>admin</cargo.remote.password>
+						</properties>
+					</configuration>
+					<deployables>
+					<deployable>
+						<type>war</type>
+						<location>${project.build.directory}/${project.build.finalName}.war</location>
+						<properties>
+							<context>helloworld</context>
+						</properties>
+					</deployable>
+				</deployables>
 				</configuration>
-
 				<executions>
 					<execution>
-						<id>sleep</id>
+						<id>tomcat-redeploy</id>
 						<phase>install</phase>
 						<goals>
-							<goal>redeploy</goal>
+							<goal>redeploy</goal> 
 						</goals>
 					</execution>
 				</executions>
 			</plugin>
+
 		</plugins>
 	</build>
 	<dependencies>
